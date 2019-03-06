@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <!--轮播图是JQ的插件-->
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/ResponsiveSlides.js/1.55/responsiveslides.js"></script>
+    <link href="https://cdn.bootcss.com/ResponsiveSlides.js/1.55/responsiveslides.css" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(
+            function(){
+                $("#slider").responsiveSlides({
+                    auto:true,//自动轮播
+                    speed:1000, //动画持续时间
+                    // nav:true,
+                })
+            }
+        )
+    </script>
+    <style>
+        a:hover{
+            text-decoration: none;
+        }
+        p{color: #8c8c8c;margin:10px 0 0 0}
+        .list-group span{font-weight: bold;}
+    </style>
+</head>
+<body>
+    <div class="container center-block" style="width: 85%;">
+
+        <!--导航栏-->
+        <nav class="navbar navbar-inverse">
+            <!--左-->
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">首页</a>
+            </div>
+            <!--右-->
+            <div class="navbar-right" style="margin-right: 50px;">
+                <form class="navbar-form navbar-left">
+                    <input type="text" class="form-control" placeholder="search...">
+                    <button class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">功能</a></li>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--副导航栏-->
+        <div class="container" style="width: 100%;">
+            <div class="row">
+                <ul class="breadcrumb " style="margin:5px;">
+                    <li><a href="#">首页</a></li>
+                    <li class="active">手机分类</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!--轮播图-->
+        <div class="container-fluid pull-left col-md-8" style="">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="rslides" id="slider">
+                        <li><img src="image/f1.png" alt="#"></li>
+                        <li><img src="image/f2.png" alt="#"></li>
+                        <li><img src="image/f3.png" alt="#"></li>
+                        <li><img src="image/f4.png" alt="#"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--右侧边栏-->
+        <div class="row col-md-4 pull-right "   >
+            <ul class="list-group">
+                <a href="#" class="list-group-item active">标题</a>
+
+                <a href="商品详情.html">
+                    <li class="list-group-item">
+                        <span>副标题</span>
+                        <span class="label label-primary pull-right">111</span>
+                        <p>手机手机手机手机手机手机手机</p>
+                    </li>
+                </a>
+                <a href="商品详情.html">
+                <li class="list-group-item">
+                        <span>副标题</span>
+                        <span class="label label-success pull-right">999</span>
+                        <p>手机手机手机手机手机手机手机手机手机</p>
+                    </li>
+                </a>
+                <a href="商品详情.html">
+                    <li class="list-group-item">
+                        <span>副标题</span>
+                        <span class="label label-warning pull-right">10</span>
+                        <p>手机手机手机手机手机手机手机手机手机</p>
+                    </li>
+                </a>
+                <a href="商品详情.html">
+                    <li class="list-group-item">
+                        <span>副标题</span>
+                        <span class="label label-danger pull-right">0</span>
+                        <p>手机手机手机手机手机手机手机手机手机</p>
+                    </li>
+                </a>
+                <a href="商品详情.html">
+                    <li class="list-group-item">
+                        <span>副标题</span>
+                        <span class="label label-danger pull-right">0</span>
+                        <p>手机手机手机手机手机手机手机手机手机</p>
+                    </li>
+                </a>
+                <a href="商品详情.html">
+                    <li class="list-group-item">
+                        <span>副标题</span>
+                        <span class="label label-danger pull-right">0</span>
+                        <p>手机手机手机手机手机手机手机手机手机</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="text-center col-md-12">
+            <ul class="pagination">
+                <li><a href="#">上一页</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">下一页</a></li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>

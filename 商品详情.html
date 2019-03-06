@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <link href="https://cdn.bootcss.com/fancybox/3.5.6/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/fancybox/3.5.6/jquery.fancybox.js"></script>
+    <style>
+        body{
+            background: #8c8c8c;
+        }
+    </style>
+    <!--图片详情-->
+    <script>
+        $(document).ready(
+            function(){
+                $(".fancybox").fancybox();
+            }
+        )
+    </script>
+</head>
+<body>
+    <div class="container">
+        <ul class="breadcrumb" style="margin-top: 1pxa">
+            <li><a href="index.html">首页</a></li>
+            <li class="active">选项</li>
+        </ul>
+
+        <div class="row" style="margin-top: 80px;">
+            <div class="col-md-4 product">
+                <div class="thumbnail text-center">
+                    <a href="image/f3.png" class="fancybox"><img src="image/f3.png" alt="#" style="width: 90%;"></a>
+                    <div style="margin-top: 15px;">牌子</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores deleniti distinctio </div>
+                    <a href="image/f3.png" class="fancybox"><button class="btn btn-success">立即购买！</button></a>
+                </div>
+            </div>
+            <div class="col-md-4 product">
+                <div class="thumbnail text-center">
+                    <a href="image/f2.png" class="fancybox"><img src="image/f2.png" alt="#" style="width: 90%;"></a>
+                    <div style="margin-top: 15px;">牌子</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores deleniti distinctio </div>
+                    <button class="btn btn-success">立即购买！</button>
+                </div>
+            </div>
+            <div class="col-md-4 product">
+                <div class="thumbnail text-center">
+                    <a href="image/f4.png" class="fancybox"><img src="image/f4.png" alt="#" style="width: 90%;"></a>
+                    <div style="margin-top: 15px;">牌子</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores deleniti distinctio </div>
+                    <button class="btn btn-success">立即购买！</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
